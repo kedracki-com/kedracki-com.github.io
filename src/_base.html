@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}en{% endblock html_lang %}">
+<head>{% block head %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="citrovm-custom" />
+    <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    {% block extra_head %}{% endblock extra_head %}{% endblock head %}
+</head>
+
+<body>
+<div id="page">
+    {% include "_header.html" %}
+    {% block content %}{% endblock %}
+    {% include "_footer.html" %}
+</div>
+</body>
+</html>

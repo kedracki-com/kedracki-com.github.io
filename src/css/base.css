@@ -1,0 +1,110 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap');
+
+:root {
+    --background-color: white;
+    --tint-color: #f32d00;
+    --tint-color-negative: black;
+    --text-color: #555;
+    --text-color-shade: #ccc;
+    --link-color: #f32d00;
+    --wide-wrap: 800px;
+    --narrow-wrap: 650px;
+}
+
+html,
+body {
+    color: var(--text-color);
+    font-family: 'Lexend Deca', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+html {
+  font-size: 16px;
+  overflow-y: scroll;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.wrap {
+    max-width: var(--wide-wrap);
+    margin: 0 auto;
+    padding: 0;
+}
+
+#header {
+    box-shadow: 0 2px 2px -2px var(--tint-color);
+    overflow: auto;
+}
+
+#header-content {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-content #branding {
+    font-size: 20px;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+}
+
+#header-content #branding:hover {
+    opacity: 0.6;
+}
+
+#header-content #branding a {
+    color: black;
+}
+
+#header-content #branding #branding-dot {
+    color: var(--tint-color);
+}
+
+#header-content ul {
+    margin: 0;
+}
+
+#header-content ul li {
+    display: inline-block;
+    padding-right: 2rem;
+    transition: all 0.2s ease-out;
+    opacity: 0.6;
+}
+
+#header-content ul li:hover {
+    opacity: 1;
+}
+
+#header-content ul li:last-child {
+    padding-left: 0;
+}
+
+#header-content ul li a {
+    text-decoration: none;
+    display: block;
+    margin: 5px 5px;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+#main {
+
+}
+
+#footer {
+    text-align: center;
+    font-size: 80%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}

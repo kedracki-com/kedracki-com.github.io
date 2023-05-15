@@ -1,0 +1,32 @@
+.catalogue {
+
+}
+
+.catalogue-item {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--text-color-shade);
+    display: block;
+    padding: 2rem 0;
+}
+
+.catalogue-item-time {
+
+}
+
+.catalogue-item-title {
+    margin: 0.2rem 0;
+}
+
+.catalogue-item-title-line {
+    border-top: 0.2rem solid var(--tint-color);
+    width: 2rem;
+    transition: all 0.3s ease-out;
+}
+
+.catalogue-item:hover .catalogue-item-title-line {
+    width: 4rem;
+}
+
+.catalogue-item-short {
+
+}

@@ -1,0 +1,1 @@
+git+https://github.com/spherefoundry/kssg.git@v0.0.1

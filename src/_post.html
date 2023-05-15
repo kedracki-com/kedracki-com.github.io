@@ -1,0 +1,15 @@
+{% extends "_base.html" %}
+{% block title %}kedracki.com{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="/css/post.css"/>
+{% endblock %}
+{% block content %}
+<div class="wrap">
+    <div class="post">
+        <time datetime="" class="post-date">{{ post.date.strftime("%B %d, %Y") }}</time>
+        <h1 class="post-title">{{ post.title }}</h1>
+        <div class="post-title-line"></div>
+        <div class="post-content">{{ content|safe }}</div>
+    </div>
+</div>
+{% endblock %}

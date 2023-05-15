@@ -1,0 +1,6 @@
+{
+    "src": "src",
+    "output": "output",
+    "domain": "https://kedracki.com",
+    "serverPort": 8001
+}

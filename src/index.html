@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+{% block title %}kedracki.com{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="/css/catalogue.css"/>
+{% endblock %}
+{% block content %}
+<div id="front" class="site-main">
+    <div class="wrap">
+        <div class="catalogue">
+            {% for post in posts %}
+            <a href="{{ post.link }}" class="catalogue-item">
+                <time datetime="" class="catalogue-item-time">{{ post.date.strftime("%B %d, %Y") }}</time>
+                <h1 class="catalogue-item-title">{{ post.title }}</h1>
+                <div class="catalogue-item-title-line"></div>
+                <p class="catalogue-item-short">{{ post.short }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
