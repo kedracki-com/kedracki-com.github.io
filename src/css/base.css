@@ -40,9 +40,17 @@ a {
     padding: 0;
 }
 
+@media screen and (max-width: 832px) {
+    .wrap {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
 #header {
     box-shadow: 0 2px 2px -2px var(--tint-color);
     overflow: auto;
+    margin-bottom: 1rem;
 }
 
 #header-content {
