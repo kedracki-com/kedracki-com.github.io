@@ -1,6 +1,7 @@
 {
     "src": "src",
     "output": "output",
-    "domain": "https://kedracki.com",
+    "title": "kedracki.com",
+    "base_url": "https://kedracki.com",
     "serverPort": 8001
 }

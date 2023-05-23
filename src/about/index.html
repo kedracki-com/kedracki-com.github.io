@@ -1,7 +1,9 @@
 {% extends "_base.html" %}
-{% block title %}kedracki.com - about{% endblock %}
+{% block title %}About | kedracki.com{% endblock %}
+{% block link_url %}{{ absolute_url('/about') }}{% endblock %}
+{% block description %}About myself and kedracki.com {% endblock %}
 {% block extra_head %}
-<link rel="stylesheet" href="/css/about.css"/>
+    <link rel="stylesheet" href="/css/about.css"/>
 {% endblock %}
 {% block content %}
 <div id="front" class="site-about">

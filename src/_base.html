@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="{% block html_lang %}en{% endblock html_lang %}">
+{%- macro compiled_title() -%}
+    {% block title required %}{% endblock %}
+{%- endmacro -%}
+{%- macro compiled_link_url() -%}
+    {% block link_url required %}{% endblock %}
+{%- endmacro -%}
+{%- macro compiled_description() -%}
+    {% block description required %}{% endblock %}
+{%- endmacro -%}
+{%- macro compiled_image_url() -%}
+    {% block image_url %}{{ absolute_url('assets/default_banner_og.png') }}{% endblock %}
+{%- endmacro -%}
+
 <head>{% block head %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="citrovm-custom" />
-    <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
-    <link rel="stylesheet" href="/css/base.css" />
-    {% block extra_head %}{% endblock extra_head %}{% endblock head %}
-</head>
+    <meta name="generator" content="kssg" />
+    <meta name="og:site_name" content="{{ site.title }}">
 
+    <title>{{ compiled_title() }}</title>
+    <meta property="og:title" content="{{ compiled_title() }}" />
+    <meta name="twitter:title" content="{{ compiled_title() }}" />
+    <meta name="og:title" content="{{ compiled_title() }}" />
+
+    <link rel="canonical" href="{{ compiled_link_url() }}" />
+    <meta name="og:url" content="{{ compiled_link_url() }}" />
+    <meta name="twitter:url" content="{{ compiled_link_url() }}" />
+
+    <meta name="description" content="{{ compiled_description() }}" />
+    <meta name="og:description" content="{{ compiled_description() }}" />
+    <meta name="twitter:description" content="{{ compiled_description() }}" />
+
+    <meta name="og:image" content="{{ compiled_image_url() }}" />
+    <meta name="twitter:image" content="{{ compiled_image_url() }}" />
+
+    <link rel="stylesheet" href="/css/base.css" />
+{% block extra_head %}{% endblock extra_head %}{% endblock head %}</head>
 <body>
 <div id="page">
     {% include "_header.html" %}
-    {% block content %}{% endblock %}
+    {% block content required %}{% endblock %}
     {% include "_footer.html" %}
 </div>
 </body>

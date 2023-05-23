@@ -1,7 +1,12 @@
 {% extends "_base.html" %}
-{% block title %}kedracki.com{% endblock %}
+{% block title %}{{ post.title }} | kedracki.com{% endblock %}
+{% block link_url %}{{ absolute_url(post.link) }}{% endblock %}
+{% block description %}{{ post.short }}{% endblock %}
 {% block extra_head %}
-<link rel="stylesheet" href="/css/post.css"/>
+    <link rel="stylesheet" href="/css/post.css"/>
+
+    <meta property="og:type" content="article">
+
 {% endblock %}
 {% block content %}
 <div class="wrap">

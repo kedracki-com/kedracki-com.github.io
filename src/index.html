@@ -1,7 +1,9 @@
 {% extends "_base.html" %}
-{% block title %}kedracki.com{% endblock %}
+{% block title %}{{ site.title }}{% endblock %}
+{% block link_url %}{{ absolute_url('/') }}{% endblock %}
+{% block description %}My thoughts on software development and the IT sector{% endblock %}
 {% block extra_head %}
-<link rel="stylesheet" href="/css/catalogue.css"/>
+    <link rel="stylesheet" href="/css/catalogue.css"/>
 {% endblock %}
 {% block content %}
 <div id="front" class="site-main">
