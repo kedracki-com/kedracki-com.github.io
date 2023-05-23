@@ -13,30 +13,30 @@
     {% block image_url %}{{ absolute_url('assets/default_banner_og.png') }}{% endblock %}
 {%- endmacro -%}
 <head>{% block head %}
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="kssg" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="kssg">
     <meta name="og:site_name" content="{{ site.title }}">
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/fav_48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/fav_96.png">
 
     <title>{{ compiled_title() }}</title>
-    <meta property="og:title" content="{{ compiled_title() }}" />
-    <meta name="twitter:title" content="{{ compiled_title() }}" />
-    <meta name="og:title" content="{{ compiled_title() }}" />
+    <meta property="og:title" content="{{ compiled_title() }}">
+    <meta name="twitter:title" content="{{ compiled_title() }}">
+    <meta name="og:title" content="{{ compiled_title() }}">
 
-    <link rel="canonical" href="{{ compiled_link_url() }}" />
-    <meta name="og:url" content="{{ compiled_link_url() }}" />
-    <meta name="twitter:url" content="{{ compiled_link_url() }}" />
+    <link rel="canonical" href="{{ compiled_link_url() }}">
+    <meta name="og:url" content="{{ compiled_link_url() }}">
+    <meta name="twitter:url" content="{{ compiled_link_url() }}">
 
-    <meta name="description" content="{{ compiled_description() }}" />
-    <meta name="og:description" content="{{ compiled_description() }}" />
-    <meta name="twitter:description" content="{{ compiled_description() }}" />
+    <meta name="description" content="{{ compiled_description() }}">
+    <meta name="og:description" content="{{ compiled_description() }}">
+    <meta name="twitter:description" content="{{ compiled_description() }}">
 
-    <meta name="og:image" content="{{ compiled_image_url() }}" />
-    <meta name="twitter:image" content="{{ compiled_image_url() }}" />
+    <meta name="og:image" content="{{ compiled_image_url() }}">
+    <meta name="twitter:image" content="{{ compiled_image_url() }}">
 
-    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/base.css">
 {% block extra_head %}{% endblock extra_head %}{% endblock head %}</head>
 <body>
 <div id="page">

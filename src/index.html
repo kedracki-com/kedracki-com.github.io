@@ -11,7 +11,7 @@
         <div class="catalogue">
             {% for post in posts %}
             <a href="{{ post.link }}" class="catalogue-item">
-                <time datetime="" class="catalogue-item-time">{{ post.date.strftime("%B %d, %Y") }}</time>
+                <time datetime="{{ post.date.strftime("%Y-%m-%d") }}" class="catalogue-item-time">{{ post.date.strftime("%B %d, %Y") }}</time>
                 <h1 class="catalogue-item-title">{{ post.title }}</h1>
                 <div class="catalogue-item-title-line"></div>
                 <p class="catalogue-item-short">{{ post.short }}</p>
