@@ -12,12 +12,13 @@
 {%- macro compiled_image_url() -%}
     {% block image_url %}{{ absolute_url('assets/default_banner_og.png') }}{% endblock %}
 {%- endmacro -%}
-
 <head>{% block head %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="kssg" />
     <meta name="og:site_name" content="{{ site.title }}">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/fav_48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/fav_96.png">
 
     <title>{{ compiled_title() }}</title>
     <meta property="og:title" content="{{ compiled_title() }}" />
