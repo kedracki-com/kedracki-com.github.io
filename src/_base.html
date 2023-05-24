@@ -17,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="kssg">
     <meta property="og:site_name" content="{{ site.title }}">
-    <link rel="icon" type="image/png" sizes="48x48" href="/assets/fav_48.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/fav_96.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/img/fav_48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/fav_96.png">
 
     <title>{{ compiled_title() }}</title>
     <meta property="og:title" content="{{ compiled_title() }}">
@@ -41,7 +41,11 @@
 <body>
 <div id="page">
     {% include "_header.html" %}
-    {% block content required %}{% endblock %}
+    <div id="main">
+        <div class="wrap">
+        {% block content %}{% endblock %}
+        </div>
+    </div>
     {% include "_footer.html" %}
 </div>
 </body>

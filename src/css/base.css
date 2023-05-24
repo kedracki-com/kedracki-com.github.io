@@ -53,6 +53,20 @@ a {
     margin-bottom: 1rem;
 }
 
+#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main {
+    flex-grow: 1;
+}
+
+#footer {
+    box-shadow: 0 -2px 2px -2px var(--tint-color);
+}
+
 #header-content {
     margin: 1rem auto;
     display: flex;
@@ -106,13 +120,58 @@ a {
     font-weight: 400;
 }
 
-#main {
-
+#footer-content {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+    align-items: center;
+    /*font-size: 80%;*/
 }
 
-#footer {
-    text-align: center;
-    font-size: 80%;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+#footer-branding {
+    margin-right: 8px;
+}
+
+#footer-logo {
+    display: block;
+}
+
+#footer-copyright {
+    flex-grow: 1;
+    align-self: end;
+    font-size: 0.75em;
+}
+
+#footer-social {
+    display: block;
+    margin: 0;
+    padding: 0;
+    justify-self: end;
+}
+
+#footer-social > li {
+    display: inline-block;
+    transition: all 0.2s ease-out;
+    opacity: 0.6;
+}
+
+#footer-social > li > a {
+    text-decoration: none;
+    display: block;
+    margin: 5px 5px;
+    color: var(--text-color);
+    line-height: 1.8rem;
+}
+
+#footer-social > li:hover {
+    opacity: 1;
+}
+
+#footer-social > li:last-child {
+    padding-left: 0;
+}
+
+#footer-social > li > a > img {
+    vertical-align: bottom;
 }
