@@ -1,6 +1,7 @@
 ---
 title: "Embracing change"
 short: "It has been 14 years since I started my professional career. As I reflect on my past engagements, I draft a vision for the future."
+order: 0
 ---
 
 # TL;DR;
@@ -50,7 +51,7 @@ shares) and part of a bigger organization. As my life situation changed (I'm a p
 would like to have a bit more control over my time. And so I have decided on the following:
 
 * To start being active in the community again
-* To start my own product
+* To start my own product - CitroVM
 * To start to offer consulting services in place of full-time employment
 
 The tricky part will be finding my balance by mixing contract vs. product revenue and stand-alone vs. team work.
@@ -62,18 +63,19 @@ contributed to open source, had internal presentation, took part in conferences 
 some of them. This is something I miss badly.
 
 And so, I have decided to start a blog. This time under my own name. It will be an outlet for my thought on software
-development, and the broader IT sector.  
+development, and the broader IT sector.
 
 BTW: If you have made it this far, thanks for reading.
 
-## The product
+## The product - CitroVM
 
-In the last couple of months, I have been quietly working on my first own product. Expect to hear more about it in the
-coming weeks.
+In the last couple of months, I have been quietly working on my first own product. I named it CitroVM. It's a 
+macOS-on-macOS virtual machine build on top of the native and extremely fast Virtualization.framework by Apple. An 
+early first version is already available on the [Mac App Store](https://apps.apple.com/us/app/citrovm/id1669517079). 
 
-To tease a bit, it is a tool mostly meant for iOS/macOS developers. It's written in SwiftUI and targeting modern macOS
-systems. I'm really excited about returning to actively developing for the Apple ecosystem. For the better or worse, a
-lot has changed in the 5 years I was on Apple hiatus. I hope to share some thought on this soon.
+The plan for CitroVM is to make macOS virtualization as hustle free as possible. In an upcoming version, I will 
+introduce a powerful AI backed Automation mechanism which will reduce the pain of installing your macOS guest. Other 
+quality-of-life features are in the backlog. You can read more in the [introduction blog post](/2023/05/30/introducing-citrovm)
 
 ## Consulting Services
 

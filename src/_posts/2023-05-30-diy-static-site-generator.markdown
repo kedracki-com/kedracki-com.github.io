@@ -2,6 +2,7 @@
 title: "DIY static site generator"
 short: "To support this blog and my various other online presences I had a need for a static site generator. I needed something 
 simple and flexible without overcomplicating things."
+order: 2
 ---
 
 # TL;DR;
