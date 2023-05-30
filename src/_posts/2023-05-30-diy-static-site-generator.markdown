@@ -49,7 +49,7 @@ I quickly wrote down what I need:
 Not that much, right? I specifically don't need plugins, switchable/reusable templates/themes, etc. With the 
 requirements sorted out, it was time to select the tools:
 
-* Python is my goto language when not working on something Apple related
+* [Python](https://www.python.org/) is my goto language when not working on something Apple related
 * [markdown-it](https://pypi.org/project/markdown-it-py/) - Markdown parsing and rendering
 * [markdown-it-plugins](https://pypi.org/project/mdit-py-plugins/) - Markdown front-matter parsing 
 * [Jinja2](https://pypi.org/project/Jinja2/) - HTML templating
