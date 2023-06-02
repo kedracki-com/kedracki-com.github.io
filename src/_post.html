@@ -2,6 +2,7 @@
 {% block title %}{{ post.title }} | kedracki.com{% endblock %}
 {% block link_url %}{{ absolute_url(post.link) }}{% endblock %}
 {% block description %}{{ post.short }}{% endblock %}
+{% block image_url %}{{ absolute_url(post.front_matter.get('social_img', 'img/default_banner_og.png')) }} {% endblock %}
 {% block extra_head %}
     <link rel="stylesheet" href="/css/post.css">
 
