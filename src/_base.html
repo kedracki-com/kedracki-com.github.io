@@ -37,6 +37,31 @@
     <meta name="twitter:image" content="{{ compiled_image_url() }}">
 
     <link rel="stylesheet" href="/css/base.css">
+    <script>
+        window.onload = function () {
+            var data = {
+                'referrer': document.referrer,
+                'location': window.location.pathname,
+                'site': window.location.host
+            }
+
+            if (window.location.host !== 'kedracki.com') {
+                return
+            }
+
+            fetch(
+                "https://api.kedracki.com/telemetry/events",
+                {
+                    method: 'POST',
+                    mode: "cors",
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data),
+                }
+            )
+        }
+    </script>
 {% block extra_head %}{% endblock extra_head %}{% endblock head %}</head>
 <body>
 <div id="page">
