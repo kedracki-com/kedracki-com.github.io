@@ -1,0 +1,201 @@
+---
+title: "WWDC 2023 Review: Vision"
+short: "Vision may be the most important Apple product since the iPhone, or not."
+social_img: "/assets/2023-07-11-wwdc23-vision/og.jpg"
+---
+
+# TL;DR;
+
+Undoubtedly, the introduction of Vision OS and Vision Pro (I will refer to them together as just Vision) was the 
+highlight of WWDC 2023. But what does it mean for the Apple ecosystem? Will Vision fundamentally change computing and 
+become Apples most important product in years, or will it remain a curiosity to be looked back upon 20 years from now?   
+
+<img src="/assets/2023-07-11-wwdc23-vision/vision_pro.jpg" alt="Marketing material for the Vision Pro device, by Apple" style="width: 100%"/>
+
+# Foreward
+
+This is the second in a series of posts reviewing different aspects and announcements of WWDC 2023. You can find the 
+first [here](/2023/06/15/wwdc23-virtualization)
+
+I don't intend for this post to be yet another summary of what Apple announced. Instead, I would like to 
+concentrate on what it means. Considering almost all what we know about Vision is based on WWDC material (the keynote, 
+around 32 session videos and some beta documentation), one could say we don't have a lot to work on. Surprisingly, even 
+these breadcrumbs yield interesting findings. 
+
+I expect this post to age badly. Until Apple ships the devices sometime in 2024 a lot can change. With this in mind, 
+it's time for some speculation.
+
+# THIS platform
+
+Let's start with a funny observation. When you watch the WWDC sessions closely, you will notice the Vision
+name and brand are not used at all. Instead, the presenters constantly refer to "this platform" or "this device". When 
+an example is run from inside Xcode, the target is listed as xrOS. My guess is that Apple kept the final name secret 
+until the very last moment. Not even trusting its own engineers to keep it under wraps. It seems like a correct 
+decision, considering the name didn't leak. That would also explain the gap between the WWDC keynote and the release of 
+the first Vision SDK two weeks later.
+
+# Years in the making
+
+Apple is currently in a unique position. There are some competitors that may have a lead on one or two aspects of 
+AR/VR technology. But Apple is the only one who has a strong, if not leading, position in multiple of them. Just to 
+name a few:
+
+<img src="/assets/2023-07-11-wwdc23-vision/timeline.png" alt="Timeline of AR/VR related Apple technologies" style="width: 100%"/>
+
+* Industrial design - The unibody aluminum MacBooks were introduced in 2008. Apple pushed material design, tooling, and 
+production engineering with multiple products since. 
+* Display - Retina displays with 326 ppi were introduced with the iPhone 4 in 2010. An iPhone 12 mini from 2020 sports up 
+to 476 ppi.  
+* Processing - Apple Silicon was introduced in 2020 and brought great leaps in both raw performance and 
+performance-per-watt. The latter enabled passively cooled MacBook Air and iPads Pros to still deliver impressive results.
+* Developer tools - Vision builds on ARKit and RealityKit which were introduced in 2017 and 2019 respectively. By now, there 
+should be already enough developers with experience using these frameworks.
+* LiDAR - Since 2020 iPhone Pro and iPad Pro models are equipped with depth-sensing cameras based on light ranging.
+* Spatial audio - Introduced with iOS 14 in 2020, it integrates head tracking information, available with selected 
+headphones, into the audio rendering pipeline.
+
+Did Vision drive these developments as early as 2015? Rumors suggest Apple has been working on its spatial computing 
+platform since around this time. If this is true, then it is a Vision-ery (pun intended) move by Tim Cook and co. 
+And it would match Apples modus-operandi. They didn't jump on AR/VR as soon as it started trending. They waited and 
+refined the technology until it was ready for use.
+
+# The device
+
+I really like that Apple didn't compromise when it came to the Vision Pro headset. And I see a lot of places they could 
+have compromised. They could have selected cheaper materials or skipped this whole EyeSight idea. But, they didn't. 
+This device holds a "Pro" label. It will enable developers to explore this new computing paradigm. So, it needs to have
+a safe margin of performance and capabilities.  So early in its lifetime, a lackluster device could hurt the adoption 
+of the whole platform. 
+
+We should not forget that this is a first-generation device. I expect Apple did their market research and decided the 
+$3500 price tag is acceptable for developers and early adopters. These early users are not as cost-sensitive. 
+Pushing for a premium option is therefore, logical. Down the line, as adoption progresses and economies of scale kick 
+in, I expect Apple to release a more reasonably priced "Air" device, with some of the features skimmed. 
+Either because it turns out they are less often used or just to push users into buying a "Pro" device. This is Apple 
+we are talking about.
+
+# Uncertainty
+
+My major concern about the Vision Pro device is usage strain. How long will a typical session last? Will users be able 
+to use it for a whole workday? What will the long-term health effects be? How quickly will a device succumb to wear 
+and tear? Will Apple sell replacement parts? Will we be able to switch between battery and wired operation and/or 
+replace batteries without power cycling the device?
+
+All of the above will have a profound impact on the value proposition of Vision. A $3500 device that you can only use 
+for 1-hour and then need to take a 4-hour break doesn't sound that great. On the other hand, if it could be used for 
+a whole work day and survive this kind of usage for 1-3 years, then it could become a primary computing device. 
+Justifying the expense would then be much easier. 
+
+# Showcased uses
+
+I feel Apple could have made a better choice of use cases for Vision Pro. A lot of focus was put on entertainment and 
+work-from-home scenarios. What I missed were professional applications where the augmentation of reality can provide 
+real value very quickly, justifying the investment in hardware and software. By the way, these are the three main areas 
+of usage I see: entertainment, general/work computing, and professional applications.
+
+<img src="/assets/2023-07-11-wwdc23-vision/concepts.jpg" alt="Marketing material for the VisionOS root UI elements, by Apple" style="width: 100%"/>
+
+## Entertainment
+
+The cinema example is an obvious and powerful one. It is a perfect fit in three key areas: a huge virtual screen, 
+spatial sound, and full immersion. Even if we drop the last component, streaming and social media will be much nicer to 
+consume while sitting comfortably on a couch. And because entertainment sessions, by their nature, tend to be limited 
+to about 1-2 hours, this will be the use case least affected by usage strain. How many users will actually be willing 
+to pay the bill for this pleasure remains to be seen.
+
+## General and work computing
+
+I'm super excited about the prospect of unlimited screen estate. With my work routine migrating towards 
+work-from-anywhere, I don't always have access to an external monitor. The cherry on the cake is the ability to access 
+all this screen estate not only while stationary but also while commuting and traveling. Interestingly, Apple only 
+slightly hinted at this in the keynote. 
+
+## Professional applications
+
+Applications targeting specific professional activities have, in my opinion, the biggest potential for early adoption. 
+The economics just add up. If, by utilizing AR/XR a professional can perform his tasks just a bit faster with just a bit 
+fewer errors, then the resulting time and cost savings will quickly pay for both the hardware and the software 
+development costs. 
+
+Vision also has the ability to enable computing in areas where it was previously limited. For example, when hand input 
+is impractical, like in healthcare, maintenance, and manufacturing. Thanks to eye-tracking and touch-less UI a physician 
+could access medical records for a patient without physically touching anything. Less physical contact means fewer 
+opportunities for contaminating his hands and spreading bacteria and viruses. Similarly, a mechanic could look up 
+documentation without leaving his station or having to redirect his gaze. 
+
+# Privacy
+
+I see three main aspects of privacy around the use of Vision: your privacy towards the surroundings, your privacy 
+towards 3rd parties, and the privacy of bystanders.
+
+## Your privacy towards the surrounding
+
+In other words, how much of what you do is visible to occasional spectators. Owing to the displays being visible only 
+to the wearer, Vision provides a much higher level of privacy than devices like smartphones and laptops. Especially 
+considering the work-while-commuting scenario, this is a huge win. On the flip side, this enhanced privacy will also 
+enable the consumption of NSFW content everywhere, without limitations, which I have some reservations about. 
+
+## Your privacy towards 3rd parties
+
+Providers of apps and services will try to collect analytics on what you do with the device. That's a given. What and to
+what extent they will be able to gather will be a function of technical capabilities and regulations. On the system 
+level, I trust Apple to do a decent job. Firstly, they made privacy part of their marketing strategy. Secondly, Apple 
+has minimal use for this data itself. Compare that to the likes of Meta and Google, which both operate huge 
+advertisement networks.   
+
+A separate discussion is how successful Apple will be in forcing similar standards on 3rd parties. On the regulation
+side of things, the introduction of privacy nutrition labels and tracking consent on iOS provides a rather positive 
+example. On the technical capabilities side, Apple made a strategic decision to limit some of the more sensitive sensor 
+data to only apps running dedicated immersive scenes. And even then, to require user consent before they can be 
+accessed. Social media platforms will have a hard time convincing me they need to run in such a mode. Other sensor data, 
+like eye tracking, is completely inaccessible to 3rd party apps.
+
+## The privacy of bystanders
+
+I foresee a lot of interesting discussions around the privacy of people who happen to be in proximity to a Vision Pro 
+user. Those bystanders may not be happy about being involuntarily exposed to the full array of sensors the device packs. 
+To make matters worse, these sensors are active most of the time the headset is being used without indicating this. 
+In contrast, a mobile phones camera is typically only active while a photo is taken, and this requires the device to be 
+pointed at the target. In a way, this informs a bystander that he may be captured. The lack of this kind of indication 
+when using Vision, may lead to paranoia on the part of bystanders and, in effect, lead to a lot of pushback, driving 
+users of Vision Pro out of public spaces.
+
+# iOS ecosystem
+
+For years, the iOS and Mac app ecosystems have converged. Catalyst made porting iOS applications to macOS easier. With 
+SwiftUI we gained a common UI framework. And finally, with Apple Silicon, macOS gained the ability to run unmodified 
+iOS  apps. Vision will also have this ability from day one.  
+
+From a developer's perspective, this is a unique opportunity. By using mostly the same technologies and frameworks, it 
+is possible to cover a wide range of form factors: watches, phones, tablets, personal computers, TV sets, car 
+infotainment systems, and soon also AR/VR. On the flip side, Vision will be flooded with legacy iOS apps, that are 
+mostly non-AR. Many of which will not even be adapted to match the distinct aspects of the Vision platform.
+
+# Unity
+
+<img src="/assets/2023-07-11-wwdc23-vision/unity.jpg" alt="Marketing material for using Unity for Vision development, by Apple" style="width: 100%"/>
+
+Announcing a 3rd party game engine integration on day one is yet another indicator Apple really tries to push adoption 
+here. The choice of Unity makes a lot of sense:
+
+* Unity has a long and healthy relationship with Apple. In fact, the engine was first announced during WWDC.
+* It has a high market share. I have found figures as high as 48%
+* It is popular choice for small and medium-sized productions
+* It already supports AR/VR
+* Unlike Unreal Engine it is not owned by Epic Games :P
+
+One aspect of the integration that caught my attention is how Unity delegates rendering to RealityKit. To make this 
+happen, they needed to write a special translation tool. But why go to these lengths, instead of using the built-in 
+Unity render pipeline? I think this has to do with the part of RealityKit that takes care of integrating rendered 
+content into the real-world environment. Everything in the line of: casting shadows of virtual objects onto real ones. 
+Reimplementing all of this in the Unity pipeline is definitely possible. But making it 100% match what  RealityKit does 
+is a completely different story. Not mentioning that RealityKit, as a system framework, has access to a lot more sensor 
+data, then what is typically available to apps. Apple would have to give Unity special treatment here, which is not 
+what Apple does. 
+
+# Final thoughts
+
+By now you should have noticed I'm very excited about Vision. One could even consider me a Vision maximalist. There are 
+two main reasons for this. Firstly, I think it will provide some much-needed movement in the personal computing space. 
+Secondly, it does provide an opportunity for developers and designers to create something new in an otherwise crowded 
+and established industry. A little paradigm shift is always a good moment to reinvent and innovate.
